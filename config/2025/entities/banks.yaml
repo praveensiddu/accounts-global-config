@@ -1,0 +1,86 @@
+- columns:
+  - date: 1
+    debit: 3
+    description: 4
+  date_format: M/d/yyyy
+  ignore_lines_startswith:
+  - Transaction Type
+  name: amex
+- columns:
+  - checkno: 3
+    date: 1
+    debit: 5
+    description: 4
+  date_format: M/d/yyyy
+  ignore_lines_startswith:
+  - Transaction Type
+  name: bbt
+- columns:
+  - checkno: 3
+    date: 1
+    debit: 3
+    description: 2
+  date_format: M/d/yyyy
+  ignore_lines_contains:
+  - Beginning balance
+  - Ending balance
+  ignore_lines_startswith:
+  - Date
+  - Description
+  - Total credits
+  - Total debits
+  name: boa
+- columns:
+  - credit: 5
+    date: 2
+    debit: 4
+    description: 3
+  date_format: M/d/yyyy
+  ignore_lines_startswith:
+  - Status
+  name: citicard
+- columns:
+  - date: 1
+    debit: 4
+    description: 3
+    memo: 6
+  date_format: M/d/yyyy
+  ignore_lines_contains:
+  - Account Name
+  - DATE
+  - account number
+  - date range
+  ignore_lines_startswith:
+  - Transaction Number
+  name: dcu
+- columns:
+  - checkno: 8
+    credit: 6
+    date: 2
+    debit: 5
+    description: 3
+    fees: 9
+    memo: 4
+  date_format: M/d/yyyy
+  ignore_lines_contains:
+  - Account Name
+  - DATE
+  - account number
+  - date range
+  ignore_lines_startswith:
+  - Transaction Number
+  name: dcuvisa
+- columns:
+  - checkno: 4
+    date: 1
+    debit: 2
+    description: 5
+  date_format: M/d/yyyy
+  ignore_lines_contains:
+  - Account Name
+  - DATE
+  - account number
+  - date range
+  ignore_lines_startswith:
+  - Transaction Number
+  name: wellsfargo
